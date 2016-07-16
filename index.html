@@ -1,22 +1,39 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
+
 <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+
 </head>
+
 <body>
-<div ng-app="tasty">
+    <div ng-app="tasty">
 
-  <div ng-controller="MainController">
-    <h1 ng-bind="title"></h1>
-    
-     <img src="{{gifData}}">
-    <!--<video>
-    <source id="webmSource" src="gifData" type="video/webm">
-    <source id="mp4Source" src='gifData' type"video/mp4">
-    </video>-->
-  </div>
+        <div ng-controller="MainController">
+            <h1 ng-bind="title"></h1>
 
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-<script src="app.js"></script>
+            <div align="center" class="">
+                <div class=>
+                    <h1 ng-click="increment(counter);"A HREF="javascript:history.go(0)">Increment</h1>
+                </div>
+                <div>
+                    <img src="{{gifData}}">
+                </div>
+                <div>
+                    <h1 ng-click="decrement(counter);">Decrement</h1>
+                </div>
+
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
